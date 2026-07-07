@@ -16,7 +16,7 @@
   <% if(item.category === "mains") {%>
   <p><strong>Name:</strong> <%=item.name%></p>
   <p><strong>Price:</strong> <%=item.price%></p>
-  <p><strong>Rating:</strong> <%=item.rating%></p>
+  <p><strong>Rating:</strong> <%=item.rating === 5? "5 ⭐" : item.rating%></p>
   <p><strong>Details:</strong> <%=item.details%></p>
   <hr>
   <% } %>
@@ -27,7 +27,7 @@
   <% if(item.category === "desserts") {%>
   <p><strong>Name:</strong> <%=item.name%></p>
   <p><strong>Price:</strong> <%=item.price%></p>
-  <p><strong>Rating:</strong> <%=item.rating%></p>
+  <p><strong>Rating:</strong> <%=item.rating === 5? "5 ⭐" : item.rating%></p>
   <p><strong>Details:</strong> <%=item.details%></p>
   <hr>
   <% } %>
@@ -38,7 +38,7 @@
   <% if(item.category === "sides") {%>
   <p><strong>Name:</strong> <%=item.name%></p>
   <p><strong>Price:</strong> <%=item.price%></p>
-  <p><strong>Rating:</strong> <%=item.rating%></p>
+  <p><strong>Rating:</strong> <%=item.rating === 5? "5 ⭐" : item.rating%></p>
   <p><strong>Details:</strong> <%=item.details%></p>
   <hr>
   <% } %>
