@@ -1,7 +1,10 @@
 const express = require('express');
 const morgan = require("morgan");
+const path = require("path")
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, "public")))
 
 app.use(morgan("dev"));
 
@@ -67,6 +70,15 @@ app.get('/', (req, res) => {
 app.get("/menu", (req, res) => {
     res.render("menu.ejs", {
         menu: RESTAURANT.menu
+    });
+});
+
+app.get("/menu/:category", (req, res) => {
+    const menuItems = RESTAURANT.menu.filter(item => item.category === req.params.category)
+
+    res.render("category.ejs", {
+        menuItems: menuItems,
+        name: req.params.category
     });
 });
 

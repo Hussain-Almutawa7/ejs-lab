@@ -14,21 +14,33 @@
   <h2>Mains</h2>
   <% menu.forEach(item => {%>
   <% if(item.category === "mains") {%>
-  <p> <%=`Name: ${item.name}, Price: ${item.price}, Rating: ${item.rating}, Details: ${item.details} `%> </p>
+  <p><strong>Name:</strong> <%=item.name%></p>
+  <p><strong>Price:</strong> <%=item.price%></p>
+  <p><strong>Rating:</strong> <%=item.rating%></p>
+  <p><strong>Details:</strong> <%=item.details%></p>
+  <hr>
   <% } %>
   <%  }) %>
 
   <h2>Desserts</h2>
   <% menu.forEach(item => {%>
   <% if(item.category === "desserts") {%>
-  <p> <%=`Name: ${item.name}, Price: ${item.price}, Rating: ${item.rating}, Details: ${item.details} `%> </p>
+  <p><strong>Name:</strong> <%=item.name%></p>
+  <p><strong>Price:</strong> <%=item.price%></p>
+  <p><strong>Rating:</strong> <%=item.rating%></p>
+  <p><strong>Details:</strong> <%=item.details%></p>
+  <hr>
   <% } %>
   <%  }) %>
 
   <h2>Sides</h2>
   <% menu.forEach(item => {%>
   <% if(item.category === "sides") {%>
-  <p> <%=`Name: ${item.name}, Price: ${item.price}, Rating: ${item.rating}, Details: ${item.details} `%> </p>
+  <p><strong>Name:</strong> <%=item.name%></p>
+  <p><strong>Price:</strong> <%=item.price%></p>
+  <p><strong>Rating:</strong> <%=item.rating%></p>
+  <p><strong>Details:</strong> <%=item.details%></p>
+  <hr>
   <% } %>
   <%  }) %>
 </body>
